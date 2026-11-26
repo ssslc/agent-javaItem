@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: ${DEVICE_DB_URL}
+    username: ${DEVICE_DB_USER}
+    password: ${DEVICE_DB_PASSWORD}
+  sql:
+    init:
+      mode: never

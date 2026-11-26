@@ -1,0 +1,16 @@
+server:
+  port: 8933
+
+spring:
+  application:
+    name: device-management
+  datasource:
+    url: jdbc:h2:mem:devices;MODE=MySQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+  sql:
+    init:
+      mode: embedded
+      encoding: UTF-8
+      schema-locations: classpath:db/schema.sql
+      data-locations: classpath:db/sample-data.sql
